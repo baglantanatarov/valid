@@ -204,3 +204,61 @@
   text-align: center;
   padding: 2.5rem;
 }
+
+////////////////////////
+// MESSAGE-WRAPPER
+.message-wrapper {
+  display: flex;
+
+
+  &__user-photo {
+    // order: 2;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+
+  &__text-box {
+    // order: 1;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    // background: tomato;
+  }
+
+  &__user-name {
+    font-size: 1.6rem;
+  }
+
+  &__paragraph {
+    margin: 1.5rem 0 3rem 0;
+  }
+  
+}
+
+form {
+  display: flex;
+}
+
+
+input, label {
+  display: block;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-grey-dark-1);
+  color: #0F0;
+  padding: 1em .5em;
+  display: block;
+  font-size: 1.6rem;
+  flex: 1;
+}
+
+label {
+  display: block;
+  padding: 1em .5em;
+  font-size: 1.5em;
+}

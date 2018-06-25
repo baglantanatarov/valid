@@ -11,7 +11,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: var(--line);
 
   display: flex;
   justify-content: space-between;
@@ -35,8 +35,28 @@
 .chat-view {
   background-color: #fff;
   //TEST
-  height: 60rem;
-  background-color: tomato;
+  // height: 65rem;
 
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  flex-direction: column;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  font-size: 1.4rem;
+  background: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-bottom: 4.5rem;
+}
+
+.user-reviews {
   flex: 1;
 }
