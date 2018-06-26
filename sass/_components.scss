@@ -218,13 +218,13 @@
     margin-right: 2rem;
   }
 
-  &__text-box {
-    // order: 1;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
-    // background: tomato;
-  }
+  // &__text-box {
+  //   order: 1;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   background: tomato;
+  // }
 
   &__user-name {
     font-size: 1.6rem;
@@ -235,6 +235,10 @@
   }
   
 }
+
+
+////////////////////////
+// MESSAGE-INPUT
 
 form {
   display: flex;
@@ -261,4 +265,32 @@ label {
   display: block;
   padding: 1em .5em;
   font-size: 1.5em;
+}
+
+
+
+////////////////////////
+// SCROLLBAR
+#scrollbar {
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: .5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey-light-4);
+    box-shadow: var(--line);
+    border-radius: .5rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-grey-dark-3);    
+  }
 }

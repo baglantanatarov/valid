@@ -47,7 +47,7 @@ body {
 .header {
   font-size: 1.4rem;
   height: 7rem;
-  background-color: #fff;
+  background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
@@ -78,6 +78,8 @@ body {
   font-size: 1.4rem;
   background: #fff;
   box-shadow: var(--shadow-light);
+  max-height: 30rem;
+  overflow-y: scroll;
   padding: 3rem;
   flex: 0 0 60%;
   margin-bottom: 4.5rem; }
@@ -239,3 +241,20 @@ label {
   display: block;
   padding: 1em .5em;
   font-size: 1.5em; }
+
+#scrollbar::-webkit-scrollbar {
+  width: .5rem;
+  background-color: #fff; }
+
+#scrollbar::-webkit-scrollbar-track {
+  border-radius: .5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line); }
+
+#scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--color-grey-light-4);
+  box-shadow: var(--line);
+  border-radius: .5rem; }
+
+#scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-grey-dark-3); }
