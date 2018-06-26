@@ -76,7 +76,7 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
-      overflow-x: scroll; } }
+      flex-wrap: wrap; } }
 
 .chat-view {
   background-color: #fff;
@@ -214,6 +214,9 @@ body {
       @media only screen and (max-width: 56.25em) {
         .side-nav__item:not(:last-child) {
           margin: 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .side-nav__item:not(:last-child) {
+          margin: 0; } }
     @media only screen and (max-width: 56.25em) {
       .side-nav__item {
         flex: 1; } }
@@ -246,10 +249,20 @@ body {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%;
     margin-right: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__user-photo {
+        margin-right: 0;
+        margin-bottom: .7rem;
+        width: 3rem;
+        height: 3rem; } }
 
 .legal {
   font-size: 1.2rem;
