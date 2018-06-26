@@ -81,6 +81,9 @@ body {
 .chat-view {
   background-color: #fff;
   flex: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .chat-view {
+      height: 90rem; } }
 
 .detail {
   display: flex;
@@ -93,7 +96,9 @@ body {
       padding: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .detail {
-      padding: .5rem; } }
+      padding: .5rem;
+      max-height: 75vh;
+      justify-content: space-between; } }
 
 .description {
   font-size: 1.4rem;
@@ -102,16 +107,16 @@ body {
   max-height: 30rem;
   overflow-y: scroll;
   padding: 3rem;
-  flex: 0 0 60%;
   margin-bottom: 4.5rem; }
   @media only screen and (max-width: 56.25em) {
     .description {
       justify-content: center;
       padding: 2rem;
       margin-bottom: 3rem; } }
-
-.user-reviews {
-  flex: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      max-height: 50rem;
+      margin-bottom: 2rem; } }
 
 .logo {
   height: 3.25rem;
