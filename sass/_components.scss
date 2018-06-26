@@ -67,9 +67,6 @@
 }
 
 
-
-
-
 ////////////////////////
 // USER NAVIGATION
 
@@ -240,33 +237,28 @@
 ////////////////////////
 // MESSAGE-INPUT
 
-form {
+.mess-main {
   display: flex;
+
+
+  & > label {
+    display: block;
+    padding: 1em .5em;
+    font-size: 1.5em;
+  }
+
+  &__input { 
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color-grey-dark-1);
+    color: #0F0;
+    padding: 1em .5em;
+    display: block;
+    font-size: 1.6rem;
+    flex: 1;  
+  }
 }
-
-
-input, label {
-  display: block;
-}
-
-input {
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  background-color: var(--color-grey-dark-1);
-  color: #0F0;
-  padding: 1em .5em;
-  display: block;
-  font-size: 1.6rem;
-  flex: 1;
-}
-
-label {
-  display: block;
-  padding: 1em .5em;
-  font-size: 1.5em;
-}
-
 
 
 ////////////////////////

@@ -220,27 +220,22 @@ body {
   .message-wrapper__paragraph {
     margin: 1.5rem 0 3rem 0; }
 
-form {
+.mess-main {
   display: flex; }
-
-input, label {
-  display: block; }
-
-input {
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  background-color: var(--color-grey-dark-1);
-  color: #0F0;
-  padding: 1em .5em;
-  display: block;
-  font-size: 1.6rem;
-  flex: 1; }
-
-label {
-  display: block;
-  padding: 1em .5em;
-  font-size: 1.5em; }
+  .mess-main > label {
+    display: block;
+    padding: 1em .5em;
+    font-size: 1.5em; }
+  .mess-main__input {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color-grey-dark-1);
+    color: #0F0;
+    padding: 1em .5em;
+    display: block;
+    font-size: 1.6rem;
+    flex: 1; }
 
 #scrollbar::-webkit-scrollbar {
   width: .5rem;
