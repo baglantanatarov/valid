@@ -11,6 +11,13 @@
     max-width: 100%;
     width: 100%;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .header {
@@ -26,9 +33,15 @@
 
 .content {
   display: flex;
-
+ 
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
+    // min-height: 93rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex: 1;
+    justify-content: space-between;
   }
 }
 
@@ -48,20 +61,20 @@
 
 .chat-view {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  
   //TEST
   // height: 65rem;
 
   flex: 1;
-
-  @media only screen and (max-width: $bp-small) {
-    height: 90rem;
-  }
 }
 
 .detail {
   display: flex;
-  padding: 4.5rem;
   flex-direction: column;
+  // min-height: 64vh;
+  padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
 
@@ -72,8 +85,7 @@
 
   @media only screen and (max-width: $bp-small) {
     padding: .5rem;
-    max-height: 75vh; 
-    justify-content: space-between;
+    justify-content: stretch;
   }
 }
 
@@ -84,24 +96,24 @@
   max-height: 30rem;
   overflow-y: scroll;
   padding: 3rem;
-  // flex: 0 0 60%;
   margin-bottom: 4.5rem;
 
 
   @media only screen and (max-width: $bp-medium) {
-    justify-content: center;
     padding: 2rem;
     margin-bottom: 3rem;
   }
 
 
   @media only screen and (max-width: $bp-small) {
-    max-height: 50rem;
-    margin-bottom: 2rem;
+    max-height: 42rem;
+    justify-content: space-between;
+    max-height: auto;
+    flex-grow: 1;
   }
 
 }
 
 .user-reviews {
-  
+  flex-grow: 0;
 }

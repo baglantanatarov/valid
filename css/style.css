@@ -52,6 +52,12 @@ body {
       margin: 0;
       max-width: 100%;
       width: 100%; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
 
 .header {
   font-size: 1.4rem;
@@ -67,6 +73,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     .content {
       flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .content {
+      flex: 1;
+      justify-content: space-between; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -80,15 +90,14 @@ body {
 
 .chat-view {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
   flex: 1; }
-  @media only screen and (max-width: 37.5em) {
-    .chat-view {
-      height: 90rem; } }
 
 .detail {
   display: flex;
-  padding: 4.5rem;
   flex-direction: column;
+  padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
   @media only screen and (max-width: 56.25em) {
@@ -97,8 +106,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .detail {
       padding: .5rem;
-      max-height: 75vh;
-      justify-content: space-between; } }
+      justify-content: stretch; } }
 
 .description {
   font-size: 1.4rem;
@@ -110,13 +118,17 @@ body {
   margin-bottom: 4.5rem; }
   @media only screen and (max-width: 56.25em) {
     .description {
-      justify-content: center;
       padding: 2rem;
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .description {
-      max-height: 50rem;
-      margin-bottom: 2rem; } }
+      max-height: 42rem;
+      justify-content: space-between;
+      max-height: auto;
+      flex-grow: 1; } }
+
+.user-reviews {
+  flex-grow: 0; }
 
 .logo {
   height: 3.25rem;
