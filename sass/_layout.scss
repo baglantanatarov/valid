@@ -36,7 +36,7 @@
  
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
-    // min-height: 93rem;
+    // 
   }
 
   @media only screen and (max-width: $bp-small) {
@@ -48,11 +48,12 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
 
-  flex: 0 0 18%;
+  flex: 0 0 25%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 
   @media only screen and (max-width: $bp-small) {
     flex-wrap: wrap;
@@ -63,57 +64,61 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+ 
   
   //TEST
-  // height: 65rem;
+  height: 80vh;
 
   flex: 1;
 }
 
-.detail {
-  display: flex;
-  flex-direction: column;
-  // min-height: 64vh;
-  padding: 4.5rem;
-  background-color: var(--color-grey-light-1);
-  border-bottom: var(--line);
+// .detail {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 64vh;
+//   padding: 4.5rem;
+//   background-color: var(--color-grey-light-1);
+//   border-bottom: var(--line);
 
 
-  @media only screen and (max-width: $bp-medium) {
-    padding: 3rem;
-  }
+//   @media only screen and (max-width: $bp-medium) {
+//     padding: 3rem;
+//   }
 
-  @media only screen and (max-width: $bp-small) {
-    padding: .5rem;
-    justify-content: stretch;
-  }
-}
+//   @media only screen and (max-width: $bp-small) {
+//     padding: .5rem;
+//     justify-content: stretch;
+//   }
+// }
 
 .description {
   font-size: 1.4rem;
-  background: #fff;
+  background-image: #fff;
   box-shadow: var(--shadow-light);
-  max-height: 30rem;
+  flex: 0 0 80%;
   overflow-y: scroll;
-  padding: 3rem;
-  margin-bottom: 4.5rem;
+  padding: 5.5rem;
+ 
 
 
-  @media only screen and (max-width: $bp-medium) {
-    padding: 2rem;
-    margin-bottom: 3rem;
-  }
+  // @media only screen and (max-width: $bp-medium) {
+  //   padding: 2rem;
+  //   margin-bottom: 3rem;
+  // }
 
 
-  @media only screen and (max-width: $bp-small) {
-    max-height: 42rem;
-    justify-content: space-between;
-    max-height: auto;
-    flex-grow: 1;
-  }
+  // @media only screen and (max-width: $bp-small) {
+  //   max-height: 42rem;
+  //   justify-content: space-between;
+  //   max-height: auto;
+  //   flex-grow: 1;
+  // }
 
 }
 
 .user-reviews {
-  flex-grow: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -10,7 +10,7 @@
 // SEARCH
 .search {
 
-  flex: 0 0 40%;
+  flex: 0 0 18%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,19 +18,27 @@
 
   &__input {
     font-family: inherit;
-    font-size: inherit;
+    font-size: 1.4rem;
     color: inherit;
     background-color: var(--color-grey-light-2);
     border: none;
     padding: .7rem 2rem;
-    border-radius: 100px;
-    width: 90%;
-    transition: all .2s;
+    border-radius: 5px;
     margin-right: -3.25rem;
+    width: 80%;
+    transition: all .2s;
+    
+
+    @media only screen and (max-width: $bp-small) {
+      width: 70%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-right: -3.25rem;
+    }
 
     &:focus {
       outline: none;
-      width: 100%;
+      width: 93%;
       background-color: var(--color-grey-light-3);
     }
 
@@ -102,11 +110,12 @@
   }
 
   &__notification {
-    font-size: .8rem;
+    font-size: .9rem;
+    font-weight: bold;
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-notific);
     color: #fff;
     position: absolute;
     top: 1.5rem;
@@ -132,11 +141,14 @@
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
-  margin-top: 3.5rem;
+  flex: 2;
 
   @media only screen and (max-width: $bp-medium) {
-    display: flex;
-    margin: 0;
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
   }
 
   &__item {
@@ -237,6 +249,7 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+  flex: 0;
 
   @media only screen and (max-width: $bp-medium) {
     display: none;
@@ -247,7 +260,7 @@
 // MESSAGE-WRAPPER
 .message-wrapper {
   display: flex;
-
+  
 
   &__user-photo {
     // order: 2;
@@ -280,6 +293,8 @@
 
 .mess-main {
   display: flex;
+  width: 100%;
+  padding-right: 2.5rem;
 
 
   & > label {
