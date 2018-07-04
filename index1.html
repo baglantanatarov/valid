@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Chat &mdash; app</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="logo chat" class="logo">
+                
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Поиск в чате">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+ 
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Джон</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <form action="#" class="search">
+                        <input type="text" class="search__input" placeholder="Поиск в чате">
+                        <button class="search__button">
+                            <svg class="search__icon">
+                                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <ul class="side-nav" class="scrollbar">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <img src="img/user-2.jpg" alt="User photo" class="side-nav__user-photo">
+                                <span>Лиза</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <img src="img/user-3.jpg" alt="User photo" class="side-nav__user-photo">
+                                <span>Тимур</span>
+                            </a>
+                        </li>  
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <img src="img/user-1.jpg" alt="User photo" class="side-nav__user-photo">
+                                <span>Марат</span>
+                            </a>
+                        </li>  
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <img src="img/user-5.jpg" alt="User photo" class="side-nav__user-photo">
+                                <span>Влад</span>
+                            </a>
+                        </li>       
+                    </ul>
+
+                    <div class="legal">
+                        &copy; 2018 by Chat-App.
+                    </div>
+                </nav>
+                <main class="chat-view">                
+                    <div class="description" id="scrollbar"></div>
+                    <div class="user-reviews">
+                        <form id="form-input-main" action="#" class="mess-main">
+                            <label for="message">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+                                </svg>
+                            </label>
+                            <input type="text" class="mess-main__input" id="input" required autofocus autocomplete="off">
+                        </form>
+                    </div>  
+                </main>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+<!-- <div class="message-wrapper">
+        <img src="img/user.jpg" alt="User photo" class="message-wrapper__user-photo">
+        <div class="message-wrapper__text-box">
+            <span class="message-wrapper__user-name">Джон</span>
+            <p class="message-wrapper__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="message-wrapper">
+        <img src="img/user-2.jpg" alt="User photo" class="message-wrapper__user-photo">
+        <div class="message-wrapper__text-box">
+            <span class="message-wrapper__user-name">Лиза</span>
+            <p class="message-wrapper__paragraph">Hello)) it's mee!!</p>
+        </div>
+    </div>
+    <div class="message-wrapper">
+        <img src="img/user.jpg" alt="User photo" class="message-wrapper__user-photo">
+        <div class="message-wrapper__text-box">
+            <span class="message-wrapper__user-name">Джон</span>
+            <p class="message-wrapper__paragraph">forever</p>
+        </div>
+    </div>
+    <div class="message-wrapper">
+        <img src="img/user.jpg" alt="User photo" class="message-wrapper__user-photo">
+        <div class="message-wrapper__text-box">
+            <span class="message-wrapper__user-name">Джон</span>
+            <p class="message-wrapper__paragraph">I like it</p>
+        </div>
+    </div>
+    <div class="message-wrapper">
+        <img src="img/user-2.jpg" alt="User photo" class="message-wrapper__user-photo">
+        <div class="message-wrapper__text-box">
+            <span class="message-wrapper__user-name">Лиза</span>
+            <p class="message-wrapper__paragraph">You read a book about alice?</p>
+        </div>
+    </div> -->
